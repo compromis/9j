@@ -1,0 +1,30 @@
+.font-headline {
+  font-family: var(--font-headline);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+
+  &.padded {
+    padding: var(--site-padding);
+  }
+
+  &.padded-x {
+    padding: 0 var(--site-padding);
+  }
+
+  &.padded-y {
+    padding: var(--site-padding) 0;
+  }
+}
+
+.focus-blue {
+  --focus-color: var(--blue);
+}
+
+.focus-pink {
+  --focus-color: var(--pink);
+}
