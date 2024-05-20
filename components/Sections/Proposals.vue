@@ -47,23 +47,23 @@ const icons = {
 
 <template>
   <section id="propostes" aria-labelledby="PropostesTitle">
-    <div class="container padded">
-      <h2 id="PropostesTitle" class="visually-hidden">{{ $t('proposals.title') }}</h2>
-      <div
-        v-for="category in proposals[$i18n.locale]"
-        :key="category.icon"
-        :class="[`color-${category.color}`, 'proposals']" 
-      >
+    <h2 id="PropostesTitle" class="visually-hidden">{{ $t('proposals.title') }}</h2>
+    <div
+      v-for="category in proposals[$i18n.locale]"
+      :key="category.icon"
+      :class="[`color-${category.color}`, 'proposals']" 
+    >
+      <div class="container padded-x">
         <h3 class="proposal-title font-headline">
           <Component :is="icons[category.icon]" class="proposal-icon" />
           {{ category.title }}
         </h3>
-        <ol class="proposal-cards list-reset">
-          <li v-for="proposal in category.items" :key="proposal" class="proposal-card">
-            <p v-html="proposal" />
-          </li>
-        </ol>
       </div>
+      <SiteSlider class="proposal-cards list-reset">
+        <article v-for="proposal in category.items" :key="proposal" class="proposal-card">
+          <p v-html="proposal" />
+        </article>
+      </SiteSlider>
     </div>
   </section>
 </template>
@@ -95,6 +95,16 @@ const icons = {
     color: var(--white);
     padding: var(--site-padding);
     font-size: var(--text-md);
+    min-width: 40vw;
+    min-height: 40vh;
+
+    p {
+      font-size: 1.1em;
+    }
+
+    strong {
+      font-weight: 900;
+    }
   }
 }
 </style>

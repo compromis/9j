@@ -3,8 +3,8 @@
     <div class="container padded collaborate-cols">
       <h2 id="CollaboraTitle" class="font-headline skew">{{ $t('collaborate.title') }}</h2>
       <article class="collaborate-card color-orange">
-        <h3 class="font-headline">Fes una donació</h3>
-        <p>Ajuda’ns a fer la campanya. Només una donació de 10€ ens fan arribar a 10.000 persones més en xarxes socials. Amb 50€, plenem un barri de cartells electorals.</p>
+        <h3 class="font-headline">{{ $t('collaborate.donate.title') }}</h3>
+        <p>{{ $t('collaborate.donate.text') }}</p>
 
         <ul class="collaborate-links">
           <li>
@@ -20,27 +20,36 @@
             <a href="https://donacions.compromis.net/donate/100" target="_blank">100€</a>
           </li>
           <li>
-            <a href="https://donacions.compromis.net" target="_blank">Altre</a>
+            <a href="https://donacions.compromis.net" target="_blank">{{ $t('collaborate.donate.other') }}</a>
           </li>
         </ul>
       </article>
       <article class="collaborate-card color-fuchsia">
-        <h3 class="font-headline">Sigues garantia democràtica</h3>
-        <p>Ens fan falta mans i ulls per a garantir el govern d’esquerres. Com saps, la dreta i l’extrema dreta tracaran per tots els mitjans d’invalidar les nostres paperetes. Per això és tan important tindre apoderats i apoderates a tots els col·legis electorals.</p>
+        <h3 class="font-headline">{{ $t('collaborate.interventor.title') }}</h3>
+        <p>{{ $t('collaborate.interventor.text') }}</p>
 
         <ul class="collaborate-links">
           <li>
-            <a href="https://apoderats.compromissumar.net/" target="_blank">Apunta’t com a apoderat/da</a>
+            <a href="https://apoderats.compromissumar.net/" target="_blank">{{ $t('collaborate.interventor.cta') }}</a>
           </li>
         </ul>
       </article>
       <article class="collaborate-card color-blue">
-        <h3 class="font-headline">Fes difusió</h3>
-        <p> Comparteix.</p>
+        <h3 class="font-headline">{{ $t('collaborate.amplify.title') }}</h3>
+        <p>{{ $t('collaborate.amplify.text') }}</p>
 
         <ul class="collaborate-links">
           <li>
-            <a href="https://apoderats.compromissumar.net/" target="_blank">Apunta’t com a apoderat/da</a>
+            <a href="https://apoderats.compromissumar.net/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://apoderats.compromissumar.net/" target="_blank">TikTok</a>
+          </li>
+          <li>
+            <a href="https://apoderats.compromissumar.net/" target="_blank">X</a>
+          </li>
+          <li>
+            <a href="https://apoderats.compromissumar.net/" target="_blank">Facebook</a>
           </li>
         </ul>
       </article>
@@ -110,6 +119,18 @@
         background: var(--white);
         color: var(--color);
       }
+    }
+  }
+}
+
+@include media('<md') {
+  .collaborate {
+    h2 {
+      margin-block-end: var(--spacer-8);
+    }
+
+    &-cols {
+      grid-template-columns: 1fr;
     }
   }
 }

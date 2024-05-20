@@ -1,26 +1,46 @@
 <template>
   <section class="candidates" id="candidatura" aria-labelledby="CandidatesTitle" style="background-image: url(/images/candidates.jpg)">
-    <div class="container">
+    <div class="container padded">
       <h2 id="CandidatesTitle" class="font-headline skew">{{ $t('candidates.title') }}</h2>
-      <div class="candidates-cards">
-        <article class="candidates-card">
-          <h3 class="font-headline skew candidate-name">Vicent Marzà</h3>
-        </article>
-        <article class="candidates-card">
-          <h3 class="font-headline skew candidate-name">Sandra Ruiz Andrés</h3>
-        </article>
-        <article class="candidates-card">
-          <h3>Resta de la llista</h3>
-          <ul>
-            <li class="font-headline">Yurena Hueso García</li>
-            <li class="font-headline">Ioana Sintimbrean</li>
-            <li class="font-headline">Patricia Sala Pareja</li>
-            <li class="font-headline">Andreu Soler i Salvador</li>
-            <li class="font-headline">Demetrio Gómez Ávila</li>
-          </ul>
-        </article>
-      </div>
     </div>
+    <SiteSlider class="candidates-cards">
+      <article class="candidates-card">
+        <h3 class="font-headline skew candidate-name">Vicent Marzà</h3>
+        <SiteSocials
+          class="candidate-socials"
+          :socials="[
+            { icon: 'fa6-brands:instagram', name: 'Instagram', url: '' },
+            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: '' },
+            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: '' },
+            { icon: 'fa6-brands:facebook', name: 'Facebook', url: '' },
+          ]"
+        />
+        <p class="candidate-description">{{ $t('candidates.marza') }}</p>
+      </article>
+      <article class="candidates-card">
+        <h3 class="font-headline skew candidate-name">Sandra Ruiz Andrés</h3>
+        <SiteSocials
+          class="candidate-socials"
+          :socials="[
+            { icon: 'fa6-brands:instagram', name: 'Instagram', url: '' },
+            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: '' },
+            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: '' },
+            { icon: 'fa6-brands:facebook', name: 'Facebook', url: '' },
+          ]"
+        />
+        <p class="candidate-description">{{ $t('candidates.sandra') }}</p>
+      </article>
+      <article class="candidates-card candidates-other">
+        <h3>{{ $t('candidates.rest') }}</h3>
+        <ul>
+          <li class="font-headline">Yurena Hueso García</li>
+          <li class="font-headline">Ioana Sintimbrean</li>
+          <li class="font-headline">Patricia Sala Pareja</li>
+          <li class="font-headline">Andreu Soler i Salvador</li>
+          <li class="font-headline">Demetrio Gómez Ávila</li>
+        </ul>
+      </article>
+    </SiteSlider>
   </section>
 </template>
 
@@ -32,31 +52,22 @@
   background-size: cover;
   padding-top: 2rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container {
+    width: 100%;
+  }
 
   h2 {
     font-size: var(--text-3xl);
     color: var(--white);
-    padding-inline: var(--site-padding);
-  }
-
-  .container {
-    display: flex;
-    min-height: calc(2rem - 100vh);
-    min-height: calc(2rem - 100vh);
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 0;
-  }
-
-  &-cards {
-    display: flex;
-    gap: var(--site-padding);
-    overflow: auto;
-    padding: var(--site-padding);
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-4);
     background: var(--orange);
     color: var(--white);
     padding: var(--site-padding);
@@ -65,6 +76,41 @@
 
     .candidate-name {
       font-size: var(--text-xl);
+    }
+
+    .candidate-socials {
+      :deep(a) {
+        opacity: 1;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+
+    .candidate-description {
+      font-size: var(--text-base);
+      margin-block-start: auto;
+    }
+  }
+
+  &-other {
+    display: flex;
+    flex-direction: column;
+    gap: var(--site-padding);
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-block-start: auto;
+      border-top: 1.5px var(--white) solid;
+    }
+
+    li {
+      font-size: var(--text-md);
+      padding: var(--spacer-2) 0;
+      border-bottom: 1.5px var(--white) solid;
     }
   }
 }
