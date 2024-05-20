@@ -28,5 +28,9 @@ useHead({ title })
 <template>
   <main class="main-site">
     <SectionsHero />
+    <SectionsProposals />
+    <SectionsCandidates />
+    <SectionsManifesto />
+    <SectionsCollaborate/>
   </main>
 </template>
