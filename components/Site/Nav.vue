@@ -160,20 +160,24 @@ function reset () {
     }
 
     &-logos {
-      gap: var(--spacer-2);
+      gap: var(--spacer-4);
 
       svg {
-        height: 1rem;
+        height: 1.25rem;
       }
     }
 
     &-menu {
       position: fixed;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: var(--site-padding);
+      right: var(--site-padding);
       overflow: auto;
       background: var(--white);
+      
+      ul { 
+        gap: 0;
+      }
 
       li {
         margin: 0;
@@ -182,6 +186,12 @@ function reset () {
       a {
         display: block;
         padding: var(--spacer-4);
+      }
+    }
+
+    &-languages {
+      :deep(.router-link-active) {
+        display: none;
       }
     }
   }

@@ -83,6 +83,12 @@
       font-weight: bold;
       align-items: center;
       gap: 1em;
+      border: 3px var(--orange) solid;
+
+      &:hover {
+        background: var(--white);
+        color: var(--orange);
+      }
 
       span {
         margin-inline-start: auto;
@@ -112,6 +118,14 @@
     .flex {
       display: flex;
       gap: var(--spacer-4);
+    }
+  }
+}
+
+@include media('<md') {
+  .manifesto {
+    &-cols {
+      grid-template-columns: 1fr;
     }
   }
 }

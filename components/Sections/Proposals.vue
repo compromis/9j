@@ -64,11 +64,11 @@ const proposals = {
       icon: 'IconsEurope',
       color: 'blue',
       items: [
-        'Incorporaremos el delito de sexo no consentido y las violaciones como crímenes europeos.',
-        'Blindaremos los derechos de las personas LGTBI+ en toda la UE exigimos la implementación de la Estrategia para la Igualdad de las Personas LGTBI+ 2020-2025.',
-        'Pediremos el reconocimiento del estado de Palestina, la suspensión del acuerdo de asociación de la Unión Europea con Israel y medidas para poner fin al genocidio palestino.',
-        'Impulsaremos la jornada laboral de 32 horas en Europa.',
-        'Reclamaremos una ley europea sobre el derecho a la vivienda que limite los precios del alquiler.'
+        'Incorporaremos el delito de sexo no consentido y las <strong>violaciones como crímenes europeos</strong>.',
+        'Blindaremos los <strong>derechos de las personas LGTBI+</strong> en toda la UE exigimos la implementación de la Estrategia para la Igualdad de las Personas LGTBI+ 2020-2025.',
+        'Pediremos el <strong>reconocimiento del estado de Palestina</strong>, la suspensión del acuerdo de asociación de la Unión Europea con Israel y medidas para poner fin al genocidio palestino.',
+        'Impulsaremos la <strong>jornada laboral de 32 horas</strong> en Europa.',
+        'Reclamaremos una ley europea sobre el <strong>derecho a la vivienda</strong> que limite los precios del alquiler.'
       ]
     }
   ]
@@ -136,6 +136,7 @@ const icons = {
     font-size: var(--text-md);
     min-width: 40vw;
     min-height: 40vh;
+    flex-shrink: 0;
 
     p {
       font-size: 1.1em;
@@ -143,6 +144,23 @@ const icons = {
 
     strong {
       font-weight: 900;
+    }
+  }
+}
+
+@include media('<md') {
+  .proposal {
+    &-title {
+      margin-bottom: 0;
+    }
+
+    &-card {
+      width: 75vw;
+      min-height: 25vh;
+    }
+
+    .slider {
+      padding-inline: var(--site-padding);
     }
   }
 }

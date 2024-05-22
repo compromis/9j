@@ -80,6 +80,7 @@ const localePath = useLocalePath()
     padding: var(--site-padding);
     min-height: 40vh;
     min-width: 40vw;
+    flex-shrink: 0;
 
     .candidate-name {
       font-size: var(--text-xl);
@@ -122,6 +123,25 @@ const localePath = useLocalePath()
       font-size: var(--text-md);
       padding: var(--spacer-2) 0;
       border-bottom: 1.5px var(--white) solid;
+    }
+  }
+}
+
+@include media('<md') {
+  .candidates {
+    background-position: center;
+
+    h2 {
+      display: none;
+    }
+
+    &-card {
+      width: 75vw;
+      min-height: 30vh;
+    }
+
+    .slider {
+      padding-left: var(--site-padding);
     }
   }
 }
