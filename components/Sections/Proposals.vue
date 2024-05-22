@@ -136,7 +136,6 @@ const icons = {
     font-size: var(--text-md);
     min-width: 40vw;
     min-height: 40vh;
-    flex-shrink: 0;
 
     p {
       font-size: 1.1em;
@@ -157,6 +156,7 @@ const icons = {
     &-card {
       width: 75vw;
       min-height: 25vh;
+      flex-shrink: 0;
     }
 
     .slider {
