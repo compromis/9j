@@ -1,8 +1,13 @@
 <template>
   <section class="manifesto" id="programa" aria-labelledby="ProgramaTitle">
     <div class="container padded manifesto-cols">
-      <h2 id="ProgramaTitle" class="font-headline skew">{{ $t('manifesto.title') }}</h2>
-      <div class="manifesto-cover">dasd</div>
+      <h2 id="ProgramaTitle" class="font-headline skew manifesto-title">
+        Programa<br>Eleccions<br>Europees<br>2024
+      </h2>
+      <div class="manifesto-cover">
+
+
+      </div>
     </div>
   </section>
 </template>
@@ -17,6 +22,7 @@
 
   h2 {
     font-size: var(--text-3xl);
+    line-height: 1;
   }
 
   &-cols {

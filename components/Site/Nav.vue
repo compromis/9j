@@ -2,10 +2,10 @@
 const { locale, locales } = useI18n()
 
 const menu = [
-  { label: 'menu.proposals', href: '#propostes', color: 'orange' },
-  { label: 'menu.candidates', href: '#candidatura', color: 'fuchsia' },
-  { label: 'menu.manifesto', href: '#programa', color: 'white' },
-  { label: 'menu.collaborate', href: '#collabora', color: 'orange' }
+  { label: 'menu.proposals', href: '/#propostes', color: 'orange' },
+  { label: 'menu.candidates', href: '/#candidatura', color: 'fuchsia' },
+  { label: 'menu.manifesto', href: '/#programa', color: 'white' },
+  { label: 'menu.collaborate', href: '/#collabora', color: 'orange' }
 ]
 
 const { $emit } = useNuxtApp()

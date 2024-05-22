@@ -1,3 +1,7 @@
+<script setup>
+const localePath = useLocalePath()
+</script>
+
 <template>
   <section class="candidates" id="candidatura" aria-labelledby="CandidatesTitle" style="background-image: url(/images/candidates.jpg)">
     <div class="container padded">
@@ -9,26 +13,29 @@
         <SiteSocials
           class="candidate-socials"
           :socials="[
-            { icon: 'fa6-brands:instagram', name: 'Instagram', url: '' },
-            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: '' },
-            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: '' },
-            { icon: 'fa6-brands:facebook', name: 'Facebook', url: '' },
+            { icon: 'fa6-brands:instagram', name: 'Instagram', url: 'https://www.instagram.com/vicentmarza/' },
+            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: 'https://www.tiktok.com/@vicentmarza' },
+            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: 'https://x.com/VicentMarza' },
           ]"
         />
-        <p class="candidate-description">{{ $t('candidates.marza') }}</p>
+        <p class="candidate-description">
+          Els últims 8 anys, he fet tant com he pogut i més per representar les polítiques de Compromís a les Corts Valencianes i al Govern del Botànic.
+          <NuxtLink :to="localePath('/marza')">
+            {{ $t('candidates.more_info') }}
+          </NuxtLink>
+        </p>
       </article>
       <article class="candidates-card">
         <h3 class="font-headline skew candidate-name">Sandra Ruiz Andrés</h3>
         <SiteSocials
           class="candidate-socials"
           :socials="[
-            { icon: 'fa6-brands:instagram', name: 'Instagram', url: '' },
-            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: '' },
-            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: '' },
-            { icon: 'fa6-brands:facebook', name: 'Facebook', url: '' },
+            { icon: 'fa6-brands:instagram', name: 'Instagram', url: 'https://www.instagram.com/sandraruiz92/' },
+            { icon: 'fa6-brands:tiktok', name: 'TikTok', url: 'https://www.tiktok.com/@salhanaa' },
+            { icon: 'fa6-brands:x-twitter', name: 'Twitter / X', url: 'https://x.com/sandraruiz92' },
+            { icon: 'fa6-brands:facebook', name: 'Facebook', url: 'https://www.facebook.com/sandra.r.andres.5/' },
           ]"
         />
-        <p class="candidate-description">{{ $t('candidates.sandra') }}</p>
       </article>
       <article class="candidates-card candidates-other">
         <h3>{{ $t('candidates.rest') }}</h3>
@@ -91,6 +98,10 @@
     .candidate-description {
       font-size: var(--text-base);
       margin-block-start: auto;
+
+      a {
+        color: var(--white);
+      }
     }
   }
 

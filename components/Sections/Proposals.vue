@@ -46,7 +46,7 @@ const icons = {
 </script>
 
 <template>
-  <section id="propostes" aria-labelledby="PropostesTitle">
+  <section class="proposal" id="propostes" aria-labelledby="PropostesTitle">
     <h2 id="PropostesTitle" class="visually-hidden">{{ $t('proposals.title') }}</h2>
     <div
       v-for="category in proposals[$i18n.locale]"
@@ -70,13 +70,16 @@ const icons = {
 
 <style lang="scss" scoped>
 .proposal {
+  padding-block-start: 1rem;
+
   &-title {
     display: flex;
     color: var(--blue);
     gap: var(--spacer-3);
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     align-items: center;
     margin-top: var(--spacer-8);
+    margin-bottom: -2rem;
   }
 
   &-icon {
