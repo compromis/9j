@@ -35,6 +35,42 @@ const proposals = {
         'Reclamarem una llei europea sobre el <strong>dret a l’habitatge</strong> que limite els preus del lloguer.'
       ]
     }
+  ],
+  cas: [
+    {
+      title: 'Por los intereses valencianos',
+      icon: 'IconsPV',
+      color: 'orange',
+      items: [
+        'Desbloquearemos el <strong>Corredor Mediterráneo</strong>, infraestructura clave para la economía valenciana.',
+        'Defenderemos unos <strong>precios justos para nuestro campo</strong> y protegeremos nuestros sectores productivos ante la competencia desleal de terceros países.',
+        '<strong>Protegeremos nuestro territorio</strong> denunciando en Bruselas todos los macroproyectos especulativos como la ampliación del Puerto de València, el PAI de Llíber o la MAT en las comarcas de Castelló.',
+        'Lucharemos para proteger la <strong>industria valenciana</strong> y exigiremos ayudas económicas para la descarbonización.'
+      ]
+    },
+    {
+      title: 'Para echar al gobierno de la vergüenza',
+      icon: 'IconsDead',
+      color: 'fuchsia',
+      items: [
+        'Mejoraremos la directiva europea de <strong>lucha contra la corrupción</strong>. No podemos permitir que el PP nos vuelva a robar.',
+        'Propondremos una <strong>Ley Europea de Memoria Democrática</strong> frente aquellos que vuelen equiparar la dictadura con sus víctimas.',
+        'Reclamaremos la <strong>oficialidad del valenciano</strong> en la Unión Europea y su pleno reconocimiento como una lengua europea que hay que promover y proteger.',
+        'Blindaremos los <strong>servicios públicos</strong> (educación, sanidad, política social) en el pilar europeo de derechos sociales.'
+      ]
+    },
+    {
+      title: 'Por una nueva Europa',
+      icon: 'IconsEurope',
+      color: 'blue',
+      items: [
+        'Incorporaremos el delito de sexo no consentido y las violaciones como crímenes europeos.',
+        'Blindaremos los derechos de las personas LGTBI+ en toda la UE exigimos la implementación de la Estrategia para la Igualdad de las Personas LGTBI+ 2020-2025.',
+        'Pediremos el reconocimiento del estado de Palestina, la suspensión del acuerdo de asociación de la Unión Europea con Israel y medidas para poner fin al genocidio palestino.',
+        'Impulsaremos la jornada laboral de 32 horas en Europa.',
+        'Reclamaremos una ley europea sobre el derecho a la vivienda que limite los precios del alquiler.'
+      ]
+    }
   ]
 }
 

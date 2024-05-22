@@ -1,14 +1,14 @@
 export default {
   assist: {
-    compromis: 'Ir a la web de Compromís',
-    sumar: 'Ir a la web de Sumar',
+    compromis: 'Ves a la web de Compromís',
+    sumar: 'Ves a la web de Sumar',
     language: 'Idioma'
   },
   meta: {
-    title: 'Que no te tiren - Compromis',
-    description: 'Mapa de apartamentos turísticos ilegales en València Ciudad',
-    keywords: 'alquiler, valencia, apartamentos, turisticos, denuncia, mapa',
-    image: 'https://quenotetiren.com/images/og_cas.jpg'
+    title: 'Compromis-Sumar - Eleccions Europees 2024',
+    description: 'Plantem Cara per canviar Europa',
+    keywords: 'compromis, sumar, marza, eleccions europees, parlament europeu',
+    image: 'https://europa.compromis.net/images/og_val.jpg'
   },
   menu: {
     proposals: 'Propostes',
@@ -25,7 +25,8 @@ export default {
   },
   manifesto: {
     title: 'Programa',
-    elections: 'Eleccions Europees 2024'
+    elections: 'Eleccions Europees 2024',
+    download: 'Descarrega el programa'
   },
   collaborate: {
     title: 'Col·labora',
@@ -36,7 +37,7 @@ export default {
     },
     interventor: {
       title: 'Sigues garantia democràtica',
-      text: 'Ens fan falta mans i ulls per tal d\'evitar que el joc brut de la dreta i l’extrema dreta. Faran tot el possible per tal d\'invalidar les nostres paperetes. Per això és tan important tindre apoderats i apoderates a tots els col·legis electorals.',
+      text: 'Ens fan falta mans i ulls per tal d\'evitar el joc brut de la dreta i l’extrema dreta. Faran tot el possible per tal d\'invalidar les nostres paperetes. Per això és tan important tindre apoderats i apoderates a tots els col·legis electorals.',
       cta: 'Apunta’t com a apoderat/da'
     },
     amplify: {
