@@ -155,6 +155,9 @@ function reset () {
 
 @include media('<lg') {
   .nav {
+    left: 0;
+    right: 0;
+
     .container {
       justify-content: space-between;
     }
@@ -170,8 +173,8 @@ function reset () {
     &-menu {
       position: fixed;
       bottom: 0;
-      left: var(--site-padding);
-      right: var(--site-padding);
+      left: 0;
+      right: 0;
       overflow: auto;
       background: var(--white);
       
