@@ -8,7 +8,7 @@ export default {
     title: 'Compromis-Sumar - Elecciones Europeas 2024',
     description: 'Plantemos Cara para cambiar Europa',
     keywords: 'compromis, sumar, marza, elecciones europeas, parlamento europeo',
-    image: 'https://europa.compromis.net/images/og_cas.jpg'
+    image: 'https://europa.compromis.net/images/ogimage.jpg'
   },
   menu: {
     proposals: 'Propuestas',
