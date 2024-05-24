@@ -2,7 +2,7 @@
 const proposals = {
   val: [
     {
-      title: 'Pels interesos valencians',
+      title: 'Pels interessos valencians',
       icon: 'IconsPV',
       color: 'orange',
       items: [
